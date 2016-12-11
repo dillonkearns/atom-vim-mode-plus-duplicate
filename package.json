@@ -1,7 +1,7 @@
 {
   "name": "vim-mode-plus-duplicate",
   "main": "./lib/main",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Duplicate an area of text using vim-mode-plus motions and text-objects.",
   "keywords": [
     "vim",
