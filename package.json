@@ -7,6 +7,11 @@
     "vim",
     "duplicate"
   ],
+  "activationCommands": {
+    "atom-text-editor": [
+      "vim-mode-plus-user:duplicate"
+    ]
+  },
   "consumedServices": {
     "vim-mode-plus": {
       "versions": {
