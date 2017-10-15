@@ -9,7 +9,10 @@ describe "vim-mode-plus-duplicate", ->
 
   beforeEach ->
     waitsForPromise ->
-      atom.packages.activatePackage('vim-mode-plus-duplicate')
+      activationPromise = atom.packages.activatePackage('vim-mode-plus-duplicate')
+      atom.workspace.open().then (editor) ->
+        atom.commands.dispatch(editor.element, "vim-mode-plus-user:duplicate")
+      activationPromise
 
     getVimState (state, vimEditor) ->
       vimState = state
